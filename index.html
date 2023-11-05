@@ -19,7 +19,6 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #3498db;
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -34,7 +33,6 @@
             top: 0;
             right: 0;
             width: 100%;
-            background-color: #3498db;
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -76,31 +74,9 @@
         }
 
         .scroll-down img {
-            width: 100px; /* Ajustez la largeur comme vous le souhaitez */
-            height: auto; /* Pour conserver les proportions de l'image */
+            width: 100px;
+            height: auto;
             vertical-align: middle;
-        }
-
-        .scroll-text {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            text-align: center;
-            font-size: 1.5em;
-            display: none;
-        }
-
-        .profile-image {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 2px solid #3498db;
         }
 
         @keyframes slideIn {
@@ -132,6 +108,26 @@
                 opacity: 1;
             }
         }
+
+        .feur {
+            position: absolute;
+            color: #800080; /* Violet */
+            font-size: 24px;
+            transform: translateY(0);
+            animation: float 5s infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -142,7 +138,7 @@
         Feur
     </div>
     <div class="container">
-        <h1>La Blague Française</h1>
+        <h1>Quoi ? FEUR !!!!!</h1>
         <p>Qu'est-ce que la blague française ?</p>
         <p class="quote">C'est lorsque quelqu'un dit "Quoi ? Feur !" après une déclaration.</p>
         <p>C'est une expression humoristique en français qui est souvent utilisée pour montrer de l'étonnement ou de la surprise.</p>
@@ -160,4 +156,12 @@
         </div>
         <h2>Pourquoi Flogss devrait être administrateur du groupe "Feur"</h2>
         <p>Flogss devrait être administrateur du groupe "Feur" car il a une passion sincère pour la blague française et une grande expérience dans la création de communautés en ligne. Il a démontré un engagement constant envers la promotion de l'humour français et l'encouragement des discussions amusantes.</p>
-        <p>En tant qu'administrateur, Flogss peut apporter son expertise pour maintenir un environnement convivial et respectueux au sein du groupe "Feur". Sa créativité et son dévouement contribueront à faire de ce groupe un endroit amusant et agré
+        <p>En tant qu'administrateur, Flogss peut apporter son expertise pour maintenir un environnement convivial et respectueux au sein du groupe "Feur". Sa créativité et son dévouement contribueront à faire de ce groupe un endroit amusant et agréable pour tous les amateurs de blagues françaises.</p>
+        <p>En résumé, Flogss est la personne idéale pour assurer le succès et la convivialité du groupe "Feur" en tant qu'administrateur.</p>
+    </div>
+    <!-- Ajout des éléments "FEUR" -->
+    <div class="feur" style="left: 10%; top: 10%;">FEUR</div>
+    <div class="feur" style="left: 20%; top: 20%;">FEUR</div>
+    <!-- Ajoutez plus d'éléments "FEUR" ici... -->
+</body>
+</html>
