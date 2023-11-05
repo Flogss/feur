@@ -1,147 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEUR !</title>
+    <title>La Blague Française</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+            overflow: hidden;
+            padding-bottom: 100px;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+            transform: translateY(-50%) rotate(-90deg);
+            transform-origin: 0 0;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        .header-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+            transform: translateY(-50%) rotate(90deg);
+            transform-origin: 100% 0;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 100px auto;
+            width: 70%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s;
+        }
+
+        h1 {
+            color: #ff6600;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        .quote {
+            font-style: italic;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+
+        .scroll-down img {
+            width: 100px; /* Ajustez la largeur comme vous le souhaitez */
+            height: auto; /* Pour conserver les proportions de l'image */
+            vertical-align: middle;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%) rotate(-90deg);
+                opacity: 0;
+                display: none;
+                visibility: hidden;
+                font-size: 0.1em;
+                padding: 0;
+                border: none;
+                background: none;
+            }
+            100% {
+                transform: translateY(0) rotate(-90deg);
+                opacity: 1;
+                display: block;
+                visibility: visible;
+                font-size: 2em;
+                padding: 20px;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-    
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>La Blague Française</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f5f5f5;
-                text-align: center;
-                margin: 0;
-                overflow: hidden;
-                padding-bottom: 100px;
-            }
-    
-            .header {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 50%;
-                background-color: #3498db;
-                color: #fff;
-                text-align: center;
-                padding: 20px;
-                font-size: 2em;
-                transform: translateX(-50%);
-                animation: slideIn 2s ease-in-out;
-            }
-    
-            .header-right {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 50%;
-                background-color: #3498db;
-                color: #fff;
-                text-align: center;
-                padding: 20px;
-                font-size: 2em;
-                transform: translateX(50%);
-                animation: slideIn 2s ease-in-out;
-            }
-    
-            .container {
-                background-color: #fff;
-                border-radius: 10px;
-                padding: 20px;
-                margin: 100px auto;
-                width: 70%;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                animation: fadeIn 2s;
-            }
-    
-            h1 {
-                color: #ff6600;
-            }
-    
-            p {
-                color: #333;
-                font-size: 1.2em;
-            }
-    
-            .quote {
-                font-style: italic;
-            }
-    
-            .scroll-down {
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                font-size: 1.5em;
-                cursor: pointer;
-            }
-    
-            .scroll-down img {
-                width: 40px;
-                height: 40px;
-                vertical-align: middle;
-            }
-    
-            @keyframes slideIn {
-                0% {
-                    transform: translateX(-100%);
-                    opacity: 0;
-                    display: none;
-                    visibility: hidden;
-                    font-size: 0.1em;
-                    padding: 0;
-                    border: none;
-                    background: none;
-                }
-                100% {
-                    transform: translateX(0);
-                    opacity: 1;
-                    display: block;
-                    visibility: visible;
-                    font-size: 2em;
-                    padding: 20px;
-                }
-            }
-    
-            @keyframes fadeIn {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div class="header">
-            Feur
-        </div>
-        <div class="header-right">
-            Feur
-        </div>
-        <div class="container">
-            <h1>La Blague Française</h1>
-            <p>Qu'est-ce que la blague française ?</p>
-            <p class="quote">C'est lorsque quelqu'un dit "Quoi ? Feur !" après une déclaration.</p>
-            <p>C'est une expression humoristique en français qui est souvent utilisée pour montrer de l'étonnement ou de la surprise.</p>
-            <p>Alors, la prochaine fois que vous entendez quelqu'un dire "Quoi ? Feur !", vous saurez que c'est une blague française.</p>
-        </div>
-        <div class="scroll-down">
-            <a href="#scroll-target">
-                <img src="https://avatars.githubusercontent.com/u/99141382?v=4" alt="Scroll Down">
-            </a>
-        </div>
-        <div id="scroll-target"></div>
-        <div class="scroll-text">
-            <h2>FLOGSS ON TOP</h2>
-        </div>
-    </body>
-    </html>
-    
+    <div class="header">
+        Feur
+    </div>
+    <div class="header-right">
+        Feur
+    </div>
+    <div class="container">
+        <h1>La Blague Française</h1>
+        <p>Qu'est-ce que la blague française ?</p>
+        <p class="quote">C'est lorsque quelqu'un dit "Quoi ? Feur !" après une déclaration.</p>
+        <p>C'est une expression humoristique en français qui est souvent utilisée pour montrer de l'étonnement ou de la surprise.</p>
+        <p>Alors, la prochaine fois que vous entendez quelqu'un dire "Quoi ? Feur !", vous saurez que c'est une blague française.</p>
+    </div>
+    <div class="scroll-down">
+        <a href="#scroll-target">
+            <img src="https://avatars.githubusercontent.com/u/99141382?v=4" alt="Scroll Down">
+        </a>
+    </div>
+    <div id="scroll-target"></div>
+    <div class="scroll-text">
+        <h2>Pourquoi Flogss devrait être administrateur du groupe "Feur"</h2>
+        <p>Flogss devrait être administrateur du groupe "Feur" car il a une passion sincère pour la blague française et une grande expérience dans la création de communautés en ligne. Il a démontré un engagement constant envers la promotion de l'humour français et l'encouragement des discussions amusantes.</p>
+        <p>En tant qu'administrateur, Flogss peut apporter son expertise pour maintenir un environnement convivial et respectueux au sein du groupe "Feur". Sa créativité et son dévouement contribueront à faire de ce groupe un endroit amusant et agréable pour tous les amateurs de blagues françaises.</p>
+        <p>En résumé, Flogss est la personne idéale pour assurer le succès et la convivialité du groupe "Feur" en tant qu'administrateur.</p>
+    </div>
+</body>
+</html>
