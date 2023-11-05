@@ -2,11 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>La Blague Française</title>
+    <title>Flogss on top</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #000; /* Fond noir */
+            color: #fff; /* Texte blanc */
             text-align: center;
             margin: 0;
             overflow: hidden;
@@ -43,7 +44,7 @@
         }
 
         .container {
-            background-color: #fff;
+            background-color: #000; /* Fond noir */
             border-radius: 10px;
             padding: 20px;
             margin: 100px auto;
@@ -57,7 +58,7 @@
         }
 
         p {
-            color: #333;
+            color: #fff; /* Texte blanc */
             font-size: 1.2em;
         }
 
@@ -159,25 +160,24 @@
         <p>En tant qu'administrateur, Flogss peut apporter son expertise pour maintenir un environnement convivial et respectueux au sein du groupe "Feur". Sa créativité et son dévouement contribueront à faire de ce groupe un endroit amusant et agréable pour tous les amateurs de blagues françaises.</p>
         <p>En résumé, Flogss est la personne idéale pour assurer le succès et la convivialité du groupe "Feur" en tant qu'administrateur.</p>
     </div>
-    <!-- Ajout des éléments "FEUR" -->
-    <div class="feur" style="left: 10%; top: 10%;">FEUR</div>
-    <div class="feur" style="left: 20%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 30%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 40%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 50%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 60%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 70%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 80%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 90%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 20%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 20%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 20%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 20%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 20%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 20%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 20%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 20%; top: 20%;">FEUR</div>
-    <div class="feur" style="left: 20%; top: 20%;">FEUR</div>
-    <!-- Ajoutez plus d'éléments "FEUR" ici... -->
+    <!-- JavaScript pour générer les éléments "FEUR" de manière aléatoire -->
+    <script>
+        for (let i = 0; i < 100; i++) {
+            createFeur();
+        }
+
+        function createFeur() {
+            const feur = document.createElement('div');
+            feur.className = 'feur';
+            feur.innerText = 'FEUR';
+            feur.style.left = randomPosition() + '%';
+            feur.style.top = randomPosition() + '%';
+            document.body.appendChild(feur);
+        }
+
+        function randomPosition() {
+            return Math.random() * 100;
+        }
+    </script>
 </body>
 </html>
