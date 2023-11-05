@@ -154,7 +154,7 @@
 </body>
 <script>
     // Générer aléatoirement des "FEUR" en arrière-plan
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 100; i++) {
         createFeur();
     }
 
@@ -181,36 +181,19 @@
     <style>
         /* Autres styles CSS ici... */
 
-        /* Styles pour personnaliser la barre de défilement */
-        body {
-            /* Fond noir */
-            background-color: #000;
-            color: #fff; /* Texte blanc */
-            text-align: center;
-            margin: 0;
-            overflow: hidden;
-            padding-bottom: 100px;
-            position: relative;
-        }
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
 
-        /* Style de la barre de défilement verticale */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
 
-        ::-webkit-scrollbar-track {
-            background: #333; /* Couleur de fond de la piste de défilement */
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #666; /* Couleur de la poignée de défilement */
-            border-radius: 5px;
-        }
-
-        /* Fin des styles de la barre de défilement */
-    </style>
-</head>
-<body>
-    <!-- Contenu de la page ici... -->
-</body>
-</html>
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
