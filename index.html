@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Flogss on top</title>
+    <title>Flogss on TOP</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -151,33 +151,66 @@
         </a>
     </div>
     <div id="scroll-target"></div>
-    <div class="scroll-text">
-        <div class="profile-image">
-            <img src="https://avatars.githubusercontent.com/u/99141382?v=4" alt="Flogss Profile Image">
-        </div>
-        <h2>Pourquoi Flogss devrait être administrateur du groupe "Feur"</h2>
-        <p>Flogss devrait être administrateur du groupe "Feur" car il a une passion sincère pour la blague française et une grande expérience dans la création de communautés en ligne. Il a démontré un engagement constant envers la promotion de l'humour français et l'encouragement des discussions amusantes.</p>
-        <p>En tant qu'administrateur, Flogss peut apporter son expertise pour maintenir un environnement convivial et respectueux au sein du groupe "Feur". Sa créativité et son dévouement contribueront à faire de ce groupe un endroit amusant et agréable pour tous les amateurs de blagues françaises.</p>
-        <p>En résumé, Flogss est la personne idéale pour assurer le succès et la convivialité du groupe "Feur" en tant qu'administrateur.</p>
-    </div>
-    <!-- JavaScript pour générer les éléments "FEUR" de manière aléatoire -->
-    <script>
-        for (let i = 0; i < 100; i++) {
-            createFeur();
+</body>
+<script>
+    // Générer aléatoirement des "FEUR" en arrière-plan
+    for (let i = 0; i < 1000; i++) {
+        createFeur();
+    }
+
+    function createFeur() {
+        const feur = document.createElement('div');
+        feur.className = 'feur';
+        feur.innerText = 'FEUR';
+        feur.style.left = randomPosition() + '%';
+        feur.style.top = randomPosition() + '%';
+        document.body.appendChild(feur);
+    }
+
+    function randomPosition() {
+        return Math.random() * 100;
+    }
+</script>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Flogss on TOP</title>
+    <style>
+        /* Autres styles CSS ici... */
+
+        /* Styles pour personnaliser la barre de défilement */
+        body {
+            /* Fond noir */
+            background-color: #000;
+            color: #fff; /* Texte blanc */
+            text-align: center;
+            margin: 0;
+            overflow: hidden;
+            padding-bottom: 100px;
+            position: relative;
         }
 
-        function createFeur() {
-            const feur = document.createElement('div');
-            feur.className = 'feur';
-            feur.innerText = 'FEUR';
-            feur.style.left = randomPosition() + '%';
-            feur.style.top = randomPosition() + '%';
-            document.body.appendChild(feur);
+        /* Style de la barre de défilement verticale */
+        ::-webkit-scrollbar {
+            width: 10px;
         }
 
-        function randomPosition() {
-            return Math.random() * 100;
+        ::-webkit-scrollbar-track {
+            background: #333; /* Couleur de fond de la piste de défilement */
         }
-    </script>
+
+        ::-webkit-scrollbar-thumb {
+            background: #666; /* Couleur de la poignée de défilement */
+            border-radius: 5px;
+        }
+
+        /* Fin des styles de la barre de défilement */
+    </style>
+</head>
+<body>
+    <!-- Contenu de la page ici... -->
 </body>
 </html>
